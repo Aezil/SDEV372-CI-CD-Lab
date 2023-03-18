@@ -20,7 +20,7 @@ class CdLabApplicationTests {
     @Test
     void testSides() {
         System.out.println("Running testSides");
-        assertEquals(dice.getSides(), SIDES);
+        assertEquals(dice.getSides(), 11);
         System.out.println("Finished running testSides");
     }
 
@@ -47,7 +47,7 @@ class CdLabApplicationTests {
         System.out.println("Running testRollMany");
         int rollAmount = 10;
         int[] history = dice.rollMany(rollAmount);
-        assertEquals(rollAmount, history.length);
+        assertEquals(25, history.length);
         System.out.println("Finished running testRollMany");
     }
 
